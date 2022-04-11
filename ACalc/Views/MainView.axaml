@@ -15,6 +15,13 @@
     <viewModels:MainViewModel />
   </Design.DataContext>
 
+    <UserControl.Styles>
+        <Style Selector="Button">
+            <Setter Property="Margin" Value="5"></Setter>
+        </Style>
+    </UserControl.Styles>
+
+
     <Grid RowDefinitions="auto,auto,*">
         <!--меню калькулятора-->
         <Menu Grid.Row="0">
