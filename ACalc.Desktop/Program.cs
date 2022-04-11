@@ -1,5 +1,8 @@
 ﻿using System;
 using Avalonia;
+using Avalonia.ReactiveUI;
+using ReactiveUI;
+using System.Reactive;
 
 namespace ACalc.Desktop
 {
@@ -16,6 +19,7 @@ namespace ACalc.Desktop
         public static AppBuilder BuildAvaloniaApp()
             => AppBuilder.Configure<App>()
                 .UsePlatformDetect()
+                .UseReactiveUI()
                 .LogToTrace();
     }
 }
