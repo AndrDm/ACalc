@@ -30,9 +30,9 @@ namespace ACalc.ViewModels
             AddNumberCommand = ReactiveCommand.Create<int>(AddNumber);
             ExecuteOperationCommand = ReactiveCommand.Create<Operation>(ExecuteOperation);
             RemoveLastNumberCommand = ReactiveCommand.Create(RemoveLastNumber);
-            RxApp.DefaultExceptionHandler = Observer.Create<Exception>(
-                    ex => Console.Write("next"),
-                    ex => Console.Write("Unhandled rxui error"));
+            //RxApp.DefaultExceptionHandler = Observer.Create<Exception>(
+            //        ex => Console.Write("next"),
+            //        ex => Console.Write("Unhandled rxui error"));
         }
 
         private void AddNumber(int value)
